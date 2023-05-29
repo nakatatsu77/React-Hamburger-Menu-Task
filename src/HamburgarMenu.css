@@ -1,0 +1,83 @@
+.App {
+  padding: 50px 50px;
+}
+
+.App h1 {
+  text-align: center;
+}
+
+nav {
+  display: block;
+  width: 220px;
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  left: -100px;
+  bottom: 0;
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+.App.open nav {
+  left: 0;
+  opacity: 1;
+}
+
+nav .inner {
+  padding: 25px;
+}
+
+nav .inner ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav .inner ul li {
+  margin: 0;
+  border-bottom: 1px solid #333;
+  display: block;
+  text-decoration: none;
+  color: #333;
+  font-weight: 14px;
+  padding: 1rem;
+  transition-duration: 0.5s;
+}
+
+nav .inner ul li:hover {
+  background-color: #e4e4e4;
+  cursor: pointer;
+}
+
+.toggleBtn {
+  display: block;
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.toggleBtn span {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background-color: #333;
+  transition: 0.5s;
+  border-radius: 4px;
+}
+
+.toggleBtn span:nth-child(1) {
+  top: 4px;
+}
+
+.toggleBtn span:nth-child(2) {
+  top: 14px;
+}
+
+.toggleBtn span:nth-child(3) {
+  bottom: 4px;
+}
